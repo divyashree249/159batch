@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/jquery-ui.css">
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#datepick").datepicker(
+				{showButtonPanel: true, 
+					changeMonth: true,
+					changeYear: true,
+					minDate: new Date(2019,03,09),
+					maxDate: new Date(2022,04,09)
+				});
+	});
+</script>
+</head>
+<body>
+<p> Date: <input type="text" id="datepick"></p>
+</body>
+</html>

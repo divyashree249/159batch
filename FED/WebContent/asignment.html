@@ -1,0 +1,102 @@
+<html>
+<head><title>Product Details</title></head>
+<body style="background-color:#498fff;">
+<h1 style="color:white;"><center>Product Details</center></h1>
+<center>
+<form>
+<div style="border:10px solid;border-color:white;margin-left:35%;margin-right:35%">
+<table border="0" class="solid" bordercolor="white" cellspacing="2px" cellpadding="2px">
+<tr>
+	<td>Category:</td>
+	<td>
+	<select id="category" name="category" onchange="myFunc()">
+	<option value="no value">---select any one---</option>
+    <option value="Electronics">Electronics</option>
+    <option value="Grocery">Grocery</option>
+	</select>
+	</td>
+</tr>
+<tr>
+	<td>Product:</td>
+	<td>
+	<select id="prodt" id="prodt" onchange="calc()">
+    <option value="no value">----------</option>
+	</select>
+	</td>
+</tr>
+<tr>
+	<td>Quantity:</td>
+	<td><input type="text" id="qty"/></td>
+</tr>
+<tr>
+	<td>Total Price:</td>
+	<td><input type="text" readonly id="price"/></td>
+</tr>
+<tr>
+	<td><input type="button" id="btnSubmit" value="Submit" onclick="update()"/></td>
+	<td><input type="RESET" id="clear" value="Clear" onclick="clear()"/></td>
+</tr>
+</table>
+</div>
+</form>
+</center>
+<script>
+		  
+function myFunc()
+{
+	var dataVal = document.getElementById("category").value;
+	if(dataVal == "Electronics")
+	{
+		document.getElementById("prodt").innerHTML = 
+			"<option value=20000>Television</option>
+			<option value=30000>Laptop</option>
+			<option value=10000>Phone</option>";
+	}
+	else if(dataVal == "Grocery"){
+		document.getElementById("prodt").innerHTML = "";
+		document.getElementById("prodt").innerHTML = 
+			"<option value=40>Soap</option>
+			<option value=90>Powder</option>";
+	}
+	else
+	{
+		document.getElementById("prodt").innerHTML = "<option>------------</option>";
+	}
+}
+function calc()
+{
+	var fetchdata = document.getElementById("category").value;
+	if(fetchdata == "Electronics")
+	{
+		var prodtval = document.getElementById("prodt").value;
+		var result = prodtval;
+		document.getElementById("price").value = result;
+	}
+	else if(fetchdata == "Grocery")
+	{
+		var prodtval = document.getElementById("prodt").value;
+		var result = prodtval;
+		document.getElementById("price").value = result;
+	}
+}
+function update()
+{
+	var fetchdata = document.getElementById("category").value;
+	if(fetchdata == "Electronics")
+	{
+		var prodtval = document.getElementById("prodt").value;
+		var qtyval = document.getElementById("qty").value;
+		var result = parseInt(prodtval*qtyval);
+		document.getElementById("price").value = result;
+	}
+	else if(fetchdata == "Grocery")
+	{
+		var prodtval = document.getElementById("prodt").value;
+		var qtyval = document.getElementById("qty").value;
+		var result = parseInt(prodtval*qtyval);
+		document.getElementById("price").value = result;
+	}
+}
+</script>
+</body>
+</html>

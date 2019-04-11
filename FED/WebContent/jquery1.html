@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+    <link type="text/css" rel="stylesheet" href="css/stylecss.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.structure.css">
+        <link type="text/css" rel="stylesheet" href="css/jquery-ui.theme.css"> 
+</head>
+ 
+<body>
+ 
+        <div id="left">
+              <p>Left Context Area</p> 
+              <input type="text" id="datepick">
+        
+        </div>
+       <br/>
+        <div id="center">
+               
+                <p>This area<b>will be</b> will contain the center content area.</p>
+        </div>
+ 
+        <div id="right">
+               
+                <p>This area will contain the right content area.
+                </p>
+               
+        </div>
+        <div id="test">
+        <button> Hit button to change something </button>
+        </div> 
+
+        <script type="text/javascript" src="js/jquery-1.11.2.js">
+        </script>
+                <script type="text/javascript" src="js/jquery-ui.js"></script>
+       <script type="text/javascript">
+        
+        $(document).ready(function(){
+        	$("#datePick").datepicker();
+        });
+        
+     </script>   
+      <script>  
+       /*  $(document).ready(function(){
+        	$("button").click(function(){
+        		/*  $("div:not(#test)").hide();  */        		
+        		/* $("#left").hide(); */
+        		/* $("#left").toggle(); */
+        		/* $("div:last").toggle(); */
+        		/* $("div:even").toggle(); */
+  		/* $("p:contains('center')").toggle(); */
+        	/* $("div:has(b)").toggle();	 */
+        	/* $("body div:nth-child(3)").toggle(); */
+        	/* $("li:empty").toggle(); */
+        	/* $("#left").fadeTo(2500, 0.3); */
+        		/* $("#left").css({"border":"dashed 4px blue","color":"orange"});
+        	$("p").html("<p>new content<p>")//html content
+        	$("p").text("<p>New Content</p>") *///added as normal text
+        	/* $("#left").fadeToggle(2500); */
+        	/*$("#left").slideToggle();
+        	});
+        }); */
+        
+        
+        </script>
+     
+       
+ </body>
+</html>

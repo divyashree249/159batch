@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/assign1" xmlns:tns="http://www.example.org/assign1" elementFormDefault="qualified">
+
+<xs:element name="email">
+	<xs:complexType>
+		<xs:sequence>
+		<xs:element name="To" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>
+		<xs:element name="from" type="xs:string"></xs:element>
+		<xs:element name="cc" type="xs:string" minOccurs="0"></xs:element>
+		<xs:element name="bcc" type="xs:string" minOccurs="0"></xs:element>
+		<xs:element name="subject" type="xs:string" minOccurs="0"></xs:element>
+		<xs:element name="body" type="xs:string"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+</xs:schema>

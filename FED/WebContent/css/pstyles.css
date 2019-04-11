@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+
+p{
+	width:30%;
+	color:lightgreen;
+	border: 5px solid green;
+	border-bottom: 19px dashed blue;
+	border-top:10px outset pink;
+	margin: 95px 15px 75px 95px;
+	padding: 15px 15px 75px 95px;
+	font-size:45px;
+	font-family:Arial;
+}
+
+.demo2{
+	color:grey;
+}
+

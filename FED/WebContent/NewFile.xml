@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE  courses [
+<!ENTITY s "Shwetha">
+<!ELEMENT courses (course, inst)>
+<!ELEMENT course (#PCDATA)>
+<!ELEMENT inst (#PCDATA)>
+
+]>
+<courses>
+<course>java</course>
+<inst>&s;</inst>
+</courses>

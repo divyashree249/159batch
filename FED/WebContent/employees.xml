@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE employees SYSTEM "employee.dtd"> -->
+<employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="employee1.xsd">
+	<employee>
+		<empid>101</empid>
+		<ename>swathi</ename>
+		<salary>450000</salary>
+	</employee>
+	<employee>
+		<empid>102</empid>
+		<ename>vamshi</ename>
+		<age>35</age>
+		<salary>550000</salary>
+	</employee>
+	<employee>
+		<empid>101</empid>
+		<ename>swathi</ename>
+		<salary>450000</salary>
+	
+	</employee>
+	<employee>
+		<empid>101</empid>
+		<ename>swathi</ename>
+		<salary>450000</salary>
+	</employee>
+</employees>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Table Demo</title>
+<style type="text/css">
+table{
+border-collapse:collapse;
+ width: 100%;
+}
+th{
+ background-color: pink;
+}
+tr:nth-child(even){
+background-color: orange;
+}
+tr:nth-child(odd){
+background-color: yellow;
+}
+th,td{
+padding: 15px;
+text-align:center;
+border-bottom: 4px solid blue;
+}
+
+</style>
+</head>
+<body >
+<table>
+<caption>Product details</caption>
+	<tr>
+		<th>PId</th>
+		<th>pname</th>
+		<th>Cost</th>
+		<th>Quantity</th>
+		
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>Soap</td>
+		<td>68</td>
+		<td>587</td>
+		
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Dove</td>
+		<td>86</td>
+		<td>587</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Santhoor</td>
+		<td>57</td>
+		<td>587</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Himalaya Baby</td>
+		<td>90</td>
+		<td>587</td>
+	</tr>
+</table>
+
+</body>
+</html>

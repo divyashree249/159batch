@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<order>
+		<orderid>1</orderid>
+		<personname>Shwetha</personname>
+		<productid>123</productid>
+		<pname>Samsung Phone</pname>
+		<cost>45000</cost>
+		<ordereddate>14-Apr-2019</ordereddate>
+		<status>ordered</status>
+	</order>

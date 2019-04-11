@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students [
+<!ENTITY s "SHWETHA">
+<!ELEMENT course EMPTY>
+<!ATTLIST  course cid ID #REQUIRED>
+<!ATTLIST course cname CDATA #REQUIRED>
+<!ATTLIST course cfee CDATA #REQUIRED>
+<!ELEMENT student EMPTY>
+<!ATTLIST student sid ID #REQUIRED>
+<!ATTLIST student sname NMTOKEN #REQUIRED>
+<!ATTLIST student scourse IDREF #REQUIRED>
+<!ATTLIST student scourses IDREFS #IMPLIED>
+]>
+<students>
+<course cid="C102" cname="Java" cfee="15000"></course>
+<course cid="C103" cname="sql" cfee="10000"></course>
+<course cid="C104" cname="fed" cfee="12000"></course>
+<student sid="s101" sname="Bindu" scourse="C102"></student>
+<student sid="s102" sname="Indhu" scourse="C103" scourses="C102"></student>
+<student sid="s103" sname="Sindu" scourse="C104"></student>
+</students>

@@ -1,0 +1,25 @@
+ <html>
+<head>
+    <script src="js/jquery-1.11.2.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#cbShowPassword').click(function () {
+                $('#txtPassword').attr(
+                		'type', $(this).is(':checked') ? 
+                				'text' : 'password');
+            });
+        });
+    </script>
+</head>
+<body style="font-family:Arial">
+	UserName : 
+	<input type="text" name="uname"><br/>
+	<br/>
+    Password :
+    <input type="password" id="txtPassword" />
+    <input type="checkbox" id="cbShowPassword" />Show password
+	<br/>
+	<br/>
+	<input type="submit" value="Login">
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.theme.css">
+</head>
+ 
+<body>
+        <div id="container">
+ 
+              <div class="header">
+     
+              </div>
+           
+   
+              <div id="nav">
+       
+           
+              </div>          
+       
+ 
+              <div class="sidebar">
+             
+              <ul id="verticalMenu">
+                <li><a href="">Rome</a>
+                  <ul>
+                    <li><a href="">Early</a></li>
+                    <li><a href="">Middle</a></li>
+                    <li><a href="">Late</a></li>
+                  </ul>
+                 </li>
+                 <li>-</li>
+                 <li><a href="">Egypt</a>
+                  <ul>
+                    <li><a href="">Early</a></li>
+                    <li><a href="">Middle</a></li>
+                    <li><a href="">Late</a></li>
+                  </ul>
+                 </li>
+                 <li><a href="">Greece</a>
+                  <ul>
+                    <li><a href="">Early</a></li>
+                    <li><a href="">Middle</a></li>
+                    <li><a href="">Late</a></li>
+                  </ul>
+                 </li>
+                  </ul>
+              </div>
+ 
+ 
+              <div class="main">
+              <div id="box">
+              <p>Thank you for visiting our history site</p>
+              <img src="caesar.png">
+              <div>
+ 
+              </div>
+       
+ 
+          </div>
+ 
+    <script src="jquery-1.11.2.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script>
+          $(document).ready(function() {
+         
+               
+             $("#verticalMenu").menu({menus: "div"});
+             $("#box").dialog({modal: true});
+                           
+            });
+ 
+     </script>
+</body>
+
+    </html>
+

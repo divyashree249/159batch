@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE email [
+<!ELEMENT email (To+,from,cc*,bcc*,subject*,body)>
+<!ELEMENT To (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT cc (#PCDATA)>
+<!ELEMENT bcc (#PCDATA)>
+<!ELEMENT subject (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+]>
+<email>
+	<To>shwetha@gmail.com</To>
+	<from>guptha.shwetha@gmail.com</from>
+	<cc>guptha@gmail.com</cc>
+	<bcc>gupthaetha@gmail.com</bcc>
+	<subject>About Holiday</subject>
+	<body>Do we have a holiday on 18th?</body>
+</email>

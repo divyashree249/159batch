@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<email>
+	<to>anish@mph.com</to>
+	<from>shwet@gma.com</from>
+	<subject>About salary</subject>
+	<body>I have recieve salary &lt; 15000</body>
+</email>
