@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<script src="js/jquery-1.11.2.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#cbShowPassword').click(function () {
+                $('#pwd').attr(
+                		'type', $(this).is(':checked') ? 
+                				'text' : 'password');
+            });
+        });
+    </script>
+</head>
+<body>
+<form action="signin">
+	Email* : 
+	<br/>
+	<input type="email" name="lname" 
+	placeholder="enter your email" required="required">
+	<br/><br/>
+	Password:
+	<br/>
+	<input type="password" name="pwd" id="pwd"
+	placeholder="enter password" required="required">
+	 <input type="checkbox" id="cbShowPassword" />Show password
+	<br/>
+	<br/>
+	<input type="submit" value="login">
+	<input type="reset" value="cancel">
+	</form>
+</body>
+</html>

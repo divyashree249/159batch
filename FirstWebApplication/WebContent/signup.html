@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+</head>
+<body bgcolor="cream">
+<h1 align="center">Login</h1>
+<form method="post" action="Signup">
+	Email* : 
+	<br/>
+	<input type="email" name="lname" 
+	placeholder="enter your email" required="required">
+	<br/><br/>
+	Password:
+	<br/>
+	<input type="password" name="pwd" placeholder="enter password">
+	<br/>
+	<br/>
+	Gender: 
+	<input type="radio" name="gender" value="Male">Male
+	<input type="radio" name="gender" value="FeMale">Female
+	<br/>
+	<br/>
+	Langauge:
+	<input type="checkbox" name="lan" value="KA">Kannada
+	<input type="checkbox" name="lan" value="TE">Telugu
+	<input type="checkbox" name="lan" value="TA">Tamil
+	<input type="checkbox" name="lan" value="HI">Hindi
+	<input type="checkbox" name="lan" value="EN">English
+	<br/>
+	<br/>
+	City:
+		<select name="city">
+		<option value="null">---select city------</option>
+		<option value="ban">Bangalore</option>
+		<option value="man">Mangalore</option>
+		<option value="che">Chennai</option>
+		<option value="hyde">Hyderabad</option>
+		<option value="del">Delhi</option>
+		</select>
+	<br/>
+	<br/>
+	DOB:
+	<input type="date" name="dob">
+	<br/>
+	
+	
+	<input type="submit" value="SignIn">
+	<input type="reset" value="cancel">
+</form>
+</body>
+</html>
